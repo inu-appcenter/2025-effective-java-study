@@ -6,7 +6,7 @@
 |박다인|김동현|한준서|김동균|정석환|황보은준|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |<a href="https://github.com/da1nda2n"><img src="https://avatars.githubusercontent.com/u/180918895?v=4" width=100></a>|<a href="https://github.com/Teach-D"><img src="https://avatars.githubusercontent.com/u/110902175?v=4" width=100></a>|<a href="https://github.com/xunxxoie"><img src="https://avatars.githubusercontent.com/u/146558936?v=4" width=100></a>|<a href="https://github.com/d6nggyun"><img src="https://avatars.githubusercontent.com/u/165386023?v=4" width=100></a>|<a href="https://github.com/Jungseokhwan"><img src="https://avatars.githubusercontent.com/u/155729481?v=4" width=100></a>|<a href="https://github.com/Jun-77"><img src="https://avatars.githubusercontent.com/u/80016088?v=4" width=100></a>
-|[@da1nda2n](https://github.com/da1nda2n)|[@Teach-D](https://github.com/Teach-D)|[@xunxxoie](https://github.com/xunxxoie)|[@d6nggyun](https://github.com/d6nggyun)|[@jJungseokhwan](https://github.com/Jungseokhwan)|[@Jun-77](https://github.com/Jun-77)
+|[@da1nda2n](https://github.com/da1nda2n)|[@Teach-D](https://github.com/Teach-D)|[@xunxxoie](https://github.com/xunxxoie)|[@d6nggyun](https://github.com/d6nggyun)|[@Jungseokhwan](https://github.com/Jungseokhwan)|[@Jun-77](https://github.com/Jun-77)
 
 
 ## 🧑🏻‍💻 스터디 시간

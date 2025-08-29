@@ -50,10 +50,9 @@
 
 ## ✒ 업로드 규칙
 - `main` 브랜치에 본인이 공부한 내용을 업로드합니다 (md파일, java파일, 이미지 파일 등)
-- 파일의 경로는 ch/item, 본인 이름으로 생성합니다
+- 파일의 경로는 'ch/item/본인이름'으로 생성합니다
   ```
-  ex) ch2/item1/dain.md
-      ch2/item2/dain/dain.md
+  ex) ch2/item2/dain/dain.md
   ```
 - 커밋 컨벤션은 아래와 같습니다.
   - Docs : 문서, 이미지, 파일 추가

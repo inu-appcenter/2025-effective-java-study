@@ -32,7 +32,7 @@ public class Favorites {
 
 <br>
 
-키로 **Class<?>** 타입을 사용하고 있다. **Class<?>** 는 타입을 담을 수 있는데, 아래 예시를 살펴보자
+키로 Class<?>** 타입을 사용하고 있다. Class<?> 는 타입을 담을 수 있는데, 아래 예시를 살펴보자
 
 ```java
 Class<?> key1 = String.class;    // Class<String>
@@ -44,7 +44,7 @@ Class<?> key3 = Boolean.class;   // Class<Boolean>
 
 <br>
 
-이전 아이템에서 **비한정적 와일드카드 타입(?)**을 사용하면, 해당 객체에 대한 **쓰기**가 불가능하다고 했다. 근데 어떻게 가능한걸까?
+이전 아이템에서 비한정적 와일드카드 타입(?)을 사용하면, 해당 객체에 대한 **쓰기**가 불가능하다고 했다. 근데 어떻게 가능한걸까?
 
 <br>
 
@@ -78,7 +78,7 @@ f.putFavorite(stringClass, 123);
 
 <br>
 
- 위 코드가 가능한 이유는 **putFavorite** 메서드에 파라미터가 바인딩될 때, 로타입이 들어오면 **putFavorite(Class<Object>, Object)** 형태로 타입이 추론되어 **Map** 객체가 오염된다.
+ 위 코드가 가능한 이유는 **putFavorite** 메서드에 파라미터가 바인딩될 때, 로타입이 들어오면 putFavorite(Class<Object>, Object) 형태로 타입이 추론되어 **Map** 객체가 오염된다.
 
 <br>
 
@@ -86,9 +86,9 @@ f.putFavorite(stringClass, 123);
 
 <br>
 
-**실체화 불가 타입은 사용할 수 없다.**
+실체화 불가 타입은 사용할 수 없다.
 
-**List<String>**이나 **List<Integer>**와 같은 타입들은 실체화가 불가능하며, 런타임에는 모두 **List.class** 타입으로만 표현된다.
+List<String>이나 List<Integer>와 같은 타입들은 실체화가 불가능하며, 런타임에는 모두 List.class 타입으로만 표현된다.
 
 <br>
 
@@ -98,11 +98,11 @@ f.putFavorite(stringClass, 123);
 
 ### 한정적 타입 토큰
 
-위 예시 **Favorites**에서 사용하는 타입 토큰은 비한정적이다. 어떤 **Class** 타입이든 받아들일 수 있기 때문이다.
+위 예시 Favorites에서 사용하는 타입 토큰은 비한정적이다. 어떤 Class 타입이든 받아들일 수 있기 때문이다.
 
 <br>
 
-한정적 타입 토큰을 통해 **Favorites**에서 받아들일 타입을 제한할 수 있다. 애너테이션 API에서 이를 적극 활용하고 있는데 아래 예시를 보자.
+한정적 타입 토큰을 통해 Favorites에서 받아들일 타입을 제한할 수 있다. 애너테이션 API에서 이를 적극 활용하고 있는데 아래 예시를 보자.
 
 ```java
 public <T extends Annotation>
@@ -111,11 +111,11 @@ T getAnnotation(Class<T> annotationType)
 
 <br>
 
-런타임에 **Class<?>** 타입 객체가 있고, 이를 **Class<? extends Annotation>**을 인수로 받는 메서드에 전달해야 하는 상황을 가정해보자. 어떻게 안전하게 전달할 수 있을까?
+런타임에 Class<?> 타입 객체가 있고, 이를 Class<? extends Annotation>을 인수로 받는 메서드에 전달해야 하는 상황을 가정해보자. 어떻게 안전하게 전달할 수 있을까?
 
 <br>
 
-단순 캐스팅은 비검사 경고가 발생하므로 안전하지 않다. 다행히도 **Class** 클래스는 **asSubclass** 메서드를 제공한다. 이 메서드는 호출한 **Class** 객체를 인수로 전달된 클래스의 하위 클래스로 캐스팅하며, 캐스팅에 실패하면 **ClassCastException**을 던진다. 따라서 타입 검사까지 수행하여 안전하게 타입 변환을 보장한다.
+단순 캐스팅은 비검사 경고가 발생하므로 안전하지 않다. 다행히도 Class 클래스는 asSubclass 메서드를 제공한다. 이 메서드는 호출한 Class 객체를 인수로 전달된 클래스의 하위 클래스로 캐스팅하며, 캐스팅에 실패하면 ClassCastException을 던진다. 따라서 타입 검사까지 수행하여 안전하게 타입 변환을 보장한다.
 
 <br>
 
